@@ -49,7 +49,7 @@ public class Basket4 implements Basket {
 		if(!setSomething) {
 			Item[] oldItems = this.items;
 			this.items = new Item[this.items.length * 2];
-			for(int i = 0; i < items.length; i += 1) {
+			for(int i = 0; i < items.length; i += 1) { // replace items with old items
 				this.items[i] = oldItems[i];
 			}
 			this.items[oldItems.length] = t;
